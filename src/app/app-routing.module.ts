@@ -1,8 +1,32 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { CategoriasComponent } from 'src/pages/categorias/categorias.component';
+import { InicioComponent } from 'src/pages/inicio/inicio.component';
+import { RecuperarComponent } from 'src/pages/recuperar/recuperar.component';
+import { RegistrarComponent } from 'src/pages/registrar/registrar.component';
+import { SesionComponent } from 'src/pages/sesion/sesion.component';
 
 const routes: Routes = [
-  
+{
+  path: '',
+  component: SesionComponent
+},
+{
+  path: 'inicio',
+  component: InicioComponent
+},
+{
+  path: 'recuperar',
+  component: RecuperarComponent
+},
+{
+  path: 'registrar',
+  component: RegistrarComponent
+},
+{
+  path: 'categorias',
+  component: CategoriasComponent
+},  
 ];
 @NgModule({
   imports: [
