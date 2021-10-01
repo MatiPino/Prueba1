@@ -1,0 +1,7 @@
+{
+  "name": "Primer_avance",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
