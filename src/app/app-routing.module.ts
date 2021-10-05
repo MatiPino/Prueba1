@@ -36,7 +36,7 @@ const routes: Routes = [
 {
   path: 'rankings',
   component: RankingsComponent
-},  
+},
 ];
 @NgModule({
   imports: [

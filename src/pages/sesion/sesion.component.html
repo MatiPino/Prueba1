@@ -1,70 +1,60 @@
 <ion-content [fullscreen]="true">
     <ion-grid class="completa">
-        <ion-row class="completa ion-align-items-center">
+        <ion-row class="ion-align-items-center">
             <ion-col size="12">
                 <ion-title>
-                    <h1>Quiz4US</h1>
+                    <h1 class="titulo-inicio">Quiz4US</h1>
                 </ion-title>
-                    <ion-card-content>
-                        <ion-row>
-                            <ion-col>
-                                <ion-item>
-                                    <ion-label position="floating">Correo electronico</ion-label>
-                                    <ion-input type="text"></ion-input>
-                                </ion-item>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col>
-                                <ion-item>
-                                    <ion-label position="floating">Contraseña</ion-label>
-                                    <ion-input type="password"></ion-input>
-                                </ion-item>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col >
-                                <ion-router-link href="recuperar">
-                                    Olvide mi contraseña
-                                </ion-router-link>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col>
-                                <ion-button shape="round" expand="block" color="success" href="inicio">
-                                    Iniciar sesión
-                                </ion-button>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            ----------------------------- O -------------------------------
-                        </ion-row>
-                        <ion-row>
-                            <ion-col>
-                                <ion-button expand="block">
-                                    Iniciar sesión con Facebook
-                                </ion-button>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col>
-                                <ion-button expand="block">
-                                    Iniciar sesión con Google
-                                </ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-card-content>
-                </ion-col>
-                <ion-col size="10" offset="3">
+                <ion-card-content>
                     <ion-row>
-                        ¿No tienes una cuenta?
+                        <ion-col class="centrar">
+                            <label class="ion-align-self-start">Correo electrónico</label>
+                            <input type="text" class="input" placeholder="Correo electrónico">
+                        </ion-col>
                     </ion-row>
-                </ion-col>
-                <ion-col offset="4">
-                    <ion-router-link href="registrar">
-                        Registrate aqui
-                    </ion-router-link>
-                </ion-col>    
-            </ion-row>
+                    <ion-row>
+                        <ion-col class="centrar">
+                            <label class="ion-align-self-start">Contraseña</label>
+                            <input type="password" class="input" placeholder="Contraseña">
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-router-link href="recuperar" class="olvidoPassword">
+                                Olvidé mi contraseña
+                            </ion-router-link>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-router-link href="inicio">
+                                <button class="button buttonLogin">Iniciar sesión</button>
+                            </ion-router-link>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <hr>O
+                        <hr>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <button class="button buttonFacebook">Iniciar sesión con Facebook</button>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <button class="button buttonGoogle">Iniciar sesión con Google</button>
+                        </ion-col>
+                    </ion-row>
+                </ion-card-content>
+            </ion-col>
+            <ion-col class="registrarse">
+                <p>¿No tienes una cuenta?</p>
+
+                <ion-router-link href="registrar" class="underline">
+                    Registrate aqui
+                </ion-router-link>
+            </ion-col>
+        </ion-row>
     </ion-grid>
 </ion-content>
