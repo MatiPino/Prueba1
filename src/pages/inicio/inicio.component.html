@@ -1,38 +1,40 @@
 <ion-content [fullscreen]="true">
     <ion-grid class="completa">
         <ion-title>
-            <h1>Quiz4US</h1>
+            <h1 class="titulo-inicio">Quiz4US</h1>
         </ion-title>
-        <ion-row class="completa ion-align-items-center">
-            <ion-col size="8" offset="2">
+        <ion-row class="ion-align-items-center">
+            <ion-col size="8" offset="2" class="botones">
                 <ion-row>
                     <ion-col>
-                        <ion-button expand="block" href="categorias">
-                            Iniciar
-                        </ion-button>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <ion-button expand="block" href="sugerencias">
-                            Sugerencias
-                        </ion-button>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <ion-button expand="block" href="rankings">
-                            Ranking
-                        </ion-button>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col size="10">
-                        <ion-router-link href="">
-                            Salir
+                        <ion-router-link href="categorias">
+                            <button class="button">Iniciar</button>
                         </ion-router-link>
                     </ion-col>
-                </ion-row>  
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-router-link href="sugerencias">
+                            <button class="button">Sugerencias</button>
+                        </ion-router-link>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-router-link href="rankings">
+                            <button class="button">Ranking</button>
+                        </ion-router-link>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+
+                    <ion-col>
+                        <ion-router-link href="">
+                            <button class="button">Salir</button>
+                        </ion-router-link>
+                    </ion-col>
+
+                </ion-row>
             </ion-col>
         </ion-row>
     </ion-grid>
