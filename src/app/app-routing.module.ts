@@ -26,7 +26,7 @@ const routes: Routes = [
 {
   path: 'categorias',
   component: CategoriasComponent
-},  
+},
 ];
 @NgModule({
   imports: [
