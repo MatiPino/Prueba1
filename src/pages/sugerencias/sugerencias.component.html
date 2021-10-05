@@ -1,31 +1,27 @@
 <ion-content [fullscreen]="true">
     <ion-grid class="completa">
         <ion-title>
-            <h1>Sugerencias</h1>
+            <h1 class="titulo-inicio">Sugerencias</h1>
         </ion-title>
-        <ion-row class="completa ion-align-items-center">
+        <ion-row class="ion-align-items-center">
             <ion-col size="8" offset="2">
                 <ion-row>
                     <ion-col>
-                        <ion-button shape="round" expand="block" color="success">
-                            Sugerir pregunta
-                        </ion-button>
+                        <button class="button buttonGreen">Sugerir pregunta</button>
                     </ion-col>
                 </ion-row>
                 <ion-row>
                     <ion-col>
-                        <ion-button shape="round" expand="block" color="danger">
-                            Reportar pregunta
-                        </ion-button>
+                        <button class="button buttonRed">Reportar pregunta</button>
                     </ion-col>
                 </ion-row>
                 <ion-row>
-                    <ion-col size="10">
+                    <ion-col>
                         <ion-router-link href="inicio">
-                            Salir
+                            <button class="button">Volver</button>
                         </ion-router-link>
                     </ion-col>
-                </ion-row>  
+                </ion-row>
             </ion-col>
         </ion-row>
     </ion-grid>
