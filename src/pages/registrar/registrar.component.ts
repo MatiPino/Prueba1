@@ -10,7 +10,7 @@ import { UserService } from "src/service/usuarios/User.service";
 
 export class RegistrarComponent implements OnInit{
     usuario: User = {
-    usuario: '',    
+    nombre_usuario: '',    
     nombre: '',
     correo: '',
     contrasena: '',
