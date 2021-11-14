@@ -17,6 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { Sugerir_preguntaComponent } from 'src/pages/sugerir_pregunta/sugerir_pregunta.component';
+import { ReportarComponent } from 'src/pages/reportar/reportar.component';
+import { SugerenciaService } from 'src/service/sugerencias/Sugerir.service';
+import { ReportarService } from 'src/service/reportar/Reportar.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { AppComponent } from './app.component';
     RegistrarComponent, 
     CategoriasComponent,
     SugerenciasComponent,
-    RankingsComponent],
+    RankingsComponent,
+    Sugerir_preguntaComponent,
+    ReportarComponent],
   entryComponents: [],
   imports: [
     BrowserModule, 
@@ -36,7 +42,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },UserService],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },UserService,SugerenciaService,ReportarService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

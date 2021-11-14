@@ -19,16 +19,16 @@ export class SesionComponent implements OnInit{
     }
 
     ngOnInit(){
-        this.iniciar.listarUsuarios()
+        /* this.iniciar.listarUsuarios()
         .subscribe(datos => {
             console.log(datos);
-        })
+        }) */
     }
        
-    public iniciarSesion(){
+    /* public iniciarSesion(){
         this.iniciar.iniciarSesion()
         .subscribe(inicio => {
           console.log(inicio); 
         })
-    }
+    } */
 }
