@@ -5,8 +5,10 @@ import { InicioComponent } from 'src/pages/inicio/inicio.component';
 import { RankingsComponent } from 'src/pages/rankings/rankings.component';
 import { RecuperarComponent } from 'src/pages/recuperar/recuperar.component';
 import { RegistrarComponent } from 'src/pages/registrar/registrar.component';
+import { ReportarComponent } from 'src/pages/reportar/reportar.component';
 import { SesionComponent } from 'src/pages/sesion/sesion.component';
 import { SugerenciasComponent } from 'src/pages/sugerencias/sugerencias.component';
+import { Sugerir_preguntaComponent } from 'src/pages/sugerir_pregunta/sugerir_pregunta.component';
 
 const routes: Routes = [
 {
@@ -32,6 +34,14 @@ const routes: Routes = [
 {
   path: 'sugerencias',
   component: SugerenciasComponent
+},
+{
+  path: 'sugerir_preguntas',
+  component: Sugerir_preguntaComponent
+},
+{
+  path: 'reportar',
+  component: ReportarComponent
 },
 {
   path: 'rankings',

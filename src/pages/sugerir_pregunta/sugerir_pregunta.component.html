@@ -1,0 +1,48 @@
+<ion-content>
+    <ion-grid class="completa">
+        <ion-row class="ion-align-items-center">
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title>
+                            Sugerir pregunta
+                        </ion-card-title>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">
+                                        Pregunta
+                                    </ion-label>
+                                    <ion-input type="text" [(ngModel)]="sugerencia.pregunta" ngDefaultControl required>
+                                    </ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">
+                                        Escribe la respuesta
+                                    </ion-label>
+                                    <ion-textarea type="text" [(ngModel)]="sugerencia.respuesta" ngDefaultControl required></ion-textarea>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-button expand="block" color="success" (click)="crearPregunta()">
+                                    Enviar sugerencia
+                                </ion-button>
+                                <ion-router-link href="sugerencias">
+                                <ion-button expand="block" >
+                                    Volver
+                                </ion-button>
+                            </ion-router-link>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

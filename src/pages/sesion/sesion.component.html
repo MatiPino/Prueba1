@@ -9,13 +9,13 @@
                     <ion-row>
                         <ion-col class="centrar">
                             <label class="ion-align-self-start">Correo electrónico</label>
-                            <input type="text" class="input" placeholder="Correo electrónico">
+                            <ion-input type="text" class="input" placeholder="Correo electrónico" [(ngModel)]="correo" ngDefaultControl></ion-input>
                         </ion-col>
                     </ion-row>
                     <ion-row>
                         <ion-col class="centrar">
                             <label class="ion-align-self-start">Contraseña</label>
-                            <input type="password" class="input" placeholder="Contraseña">
+                            <ion-input type="password" class="input" placeholder="Contraseña" [(ngModel)]="contrasena" ngDefaultControl></ion-input>
                         </ion-col>
                     </ion-row>
                     <ion-row>
@@ -26,11 +26,11 @@
                         </ion-col>
                     </ion-row>
                     <ion-row>
-                        <ion-col>
-                            <ion-router-link href="inicio">
-                                <button class="button buttonLogin">Iniciar sesión</button>
-                            </ion-router-link>
-                        </ion-col>
+                        <ion-router-link href="inicio" class="button">
+                            <ion-col>
+                                <button class="button buttonLogin" >Iniciar Sesion</button>
+                            </ion-col>
+                        </ion-router-link>
                     </ion-row>
                     <ion-row>
                         <hr>O
