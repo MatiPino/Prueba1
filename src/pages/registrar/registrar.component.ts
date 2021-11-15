@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { User } from "src/interface/usuarios/User";
 import { UserService } from "src/service/usuarios/User.service";
+import Swal from 'sweetalert2';
 
 @Component({
     selector: 'registrar',
@@ -9,6 +10,7 @@ import { UserService } from "src/service/usuarios/User.service";
 })
 
 export class RegistrarComponent implements OnInit{
+    
     usuario: User = {
     nombre_usuario: '',    
     nombre: '',
@@ -30,7 +32,18 @@ export class RegistrarComponent implements OnInit{
         .subscribe(datos => {
             datos.nombre, datos.correo, datos.contrasena, datos.repetir_contrasena,
             console.log(datos);
-        alert('Usuario agregado');
+        return this.mostrarAlertas();    
         })
     }
+
+    mostrarAlertas(){
+        Swal.fire({
+            title: 'Muy bien', 
+            text: 'Usuario registrado', 
+            icon: 'success',
+            footer: '<a href=""> Volver al inicio </a>'
+            })
+    }
+
+    
 }

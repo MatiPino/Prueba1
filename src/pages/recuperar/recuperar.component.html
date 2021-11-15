@@ -1,0 +1,52 @@
+<ion-content>
+    <ion-grid class="completa">
+        <ion-row class="ion-align-items-center">
+            <ion-col>
+                <ion-card>
+                    <ion-col>
+                        <ion-card-title class="ion-text-center">
+                            Quiz4US
+                        </ion-card-title>
+                    </ion-col>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">
+                            Recuperar Cuenta
+                        </ion-card-title>
+                    </ion-card-header>
+                    <ion-card-subtitle type="text" class="ion-text-center">
+                        Para recuperar la cuenta es necesario que nos indique el correo electronico, para asi poder reenviarle la contraseña
+                    </ion-card-subtitle>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Correo electronico
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="solicitud.correo" ngDefaultControl>
+                                        </ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button expand="block" color="success" (click)="solicitarCuenta()">
+                                        Solicitar
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col class="ion-text-center">
+                                    <ion-router-link href="">
+                                        Atras
+                                    </ion-router-link>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

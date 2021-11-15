@@ -1,6 +1,7 @@
 import { Component } from "@angular/core"
 import { Report } from "src/interface/reportar/Report";
 import { ReportarService } from "src/service/reportar/Reportar.service";
+import Swal from "sweetalert2";
 
 @Component({
     selector: 'reportar',
@@ -25,7 +26,16 @@ export class ReportarComponent {
         .subscribe(datos => {
             datos.pregunta, datos.motivo
             console.log(datos);
-        alert('Pregunta reportada');
+        return this.mostrarAlertas();
         })
+    }
+
+    mostrarAlertas(){
+        Swal.fire({
+            title: 'Muy bien!', 
+            text: 'Pregunta reportada con exito', 
+            icon: 'success',
+            footer: '<a href="sugerencias"> Volver a sugerencias </a>'
+            })
     }
 }

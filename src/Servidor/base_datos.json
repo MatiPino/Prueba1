@@ -1,0 +1,27 @@
+{
+  "usuarios": [
+    {
+      "nombre_usuario": "as",
+      "nombre": "as",
+      "correo": "as",
+      "contrasena": "as",
+      "repetir_contrasena": "as",
+      "id": 1
+    }
+  ],
+  "sugerencias": [
+  ],
+  "reportar": [
+    {
+      "pregunta": "hola vengo a reportar",
+      "motivo": "reporte reporte",
+      "id": 1
+    }
+  ],
+  "recuperar": [
+    {
+      "correo": "matias@gmail.com",
+      "id": 1
+    }
+  ]
+}

@@ -21,6 +21,8 @@ import { Sugerir_preguntaComponent } from 'src/pages/sugerir_pregunta/sugerir_pr
 import { ReportarComponent } from 'src/pages/reportar/reportar.component';
 import { SugerenciaService } from 'src/service/sugerencias/Sugerir.service';
 import { ReportarService } from 'src/service/reportar/Reportar.service';
+import { RecuperarService } from 'src/service/recuperar/Recuperar.service';
+import { AlertasComponent } from 'src/alertas/alertas.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ReportarService } from 'src/service/reportar/Reportar.service';
     SugerenciasComponent,
     RankingsComponent,
     Sugerir_preguntaComponent,
-    ReportarComponent],
+    ReportarComponent,
+    AlertasComponent],
   entryComponents: [],
   imports: [
     BrowserModule, 
@@ -42,7 +45,11 @@ import { ReportarService } from 'src/service/reportar/Reportar.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },UserService,SugerenciaService,ReportarService],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    UserService,
+    SugerenciaService,
+    ReportarService,
+    RecuperarService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
