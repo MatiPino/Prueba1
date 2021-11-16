@@ -1,27 +1,25 @@
 {
   "usuarios": [
     {
-      "nombre_usuario": "as",
-      "nombre": "as",
-      "correo": "as",
-      "contrasena": "as",
-      "repetir_contrasena": "as",
+      "nombre_usuario": "matias4321",
+      "nombre": "matias pino",
+      "correo": "matias@gmail.com",
+      "contrasena": "matias123",
+      "repetir_contrasena": "matias123",
       "id": 1
-    },
-    {
-      "nombre_usuario": "sheshovs",
-      "nombre": "sergio",
-      "correo": "sheshovs@gmail.com",
-      "contrasena": "123123",
-      "repetir_contrasena": "123123",
-      "id": 2
     }
   ],
-  "sugerencias": [],
+  "sugerencias": [
+    {
+      "pregunta": "¿Cuanto es 2 + 2?",
+      "respuesta": "El resultado es 4",
+      "id": 1
+    }
+  ],
   "reportar": [
     {
-      "pregunta": "hola vengo a reportar",
-      "motivo": "reporte reporte",
+      "pregunta": "¿Cuanto es 2x2?",
+      "motivo": "El resutlado es 4 y no aparece",
       "id": 1
     }
   ],

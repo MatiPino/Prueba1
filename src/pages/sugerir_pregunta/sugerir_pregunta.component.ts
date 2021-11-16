@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core"
+import { Router } from "@angular/router";
 import { Sugerir } from "src/interface/sugerencias/Sugerir"
 import { SugerenciaService } from "src/service/sugerencias/Sugerir.service";
 import Swal from "sweetalert2";
@@ -17,7 +18,7 @@ export class Sugerir_preguntaComponent{
 
     private preguntas: SugerenciaService;
 
-    constructor(servicio:SugerenciaService){
+    constructor(servicio:SugerenciaService, private router: Router){
         this.preguntas = servicio
     }
 
@@ -35,7 +36,9 @@ export class Sugerir_preguntaComponent{
             title: 'Muy bien!', 
             text: 'Pregunta sugerida con exito', 
             icon: 'success',
-            footer: '<a href="sugerencias"> Volver a sugerencias </a>'
-            })
+            confirmButtonText: 'Sugerencias'
+        }).then((result) =>
+        result.isConfirmed ? this.router.navigate(['/sugerencias']) : null
+        );
     }
 }

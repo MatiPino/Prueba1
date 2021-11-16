@@ -31,6 +31,7 @@ export class RecuperarComponent {
             title: 'Listo', 
             text: 'Solicitud enviada', 
             icon: 'success',
+            confirmButtonText: 'Aceptar'
         }).then(result => result.isConfirmed ? this.router.navigate(['']) : null);
     }
 }

@@ -5,7 +5,7 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class ReportarService {
-    private url: string = 'http://192.168.0.16:3000/reportar';
+    private url: string = 'http://localhost:3000/reportar';
     private sugerencias: HttpClient
 
 

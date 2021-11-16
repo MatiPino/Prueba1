@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 
 @Injectable()
 export class UserService {
-  private url: string = 'http://192.168.0.16:3000/usuarios';
+  private url: string = 'http://localhost:3000/usuarios';
   private usuarios: HttpClient;
 
   constructor(usuario: HttpClient, private router: Router) {
