@@ -17,6 +17,7 @@
   padding-left: 10px;
   border-radius: 3px;
   color: #000;
+  background-color: #ffffff;
   font-size: 14px;
   text-align: left;
   font-family: Arial;
@@ -43,7 +44,7 @@
   border-radius: 25px;
   font-size: 14px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .buttonLogin {

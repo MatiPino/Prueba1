@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { Recuperar } from "src/interface/recuperar/Recuperar";
 import { RecuperarService } from "src/service/recuperar/Recuperar.service";
 import Swal from "sweetalert2";
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'recuperar',
@@ -16,17 +17,13 @@ export class RecuperarComponent {
 
     private preguntas: RecuperarService;
 
-    constructor(servicio:RecuperarService){
+    constructor(servicio:RecuperarService, private router: Router){
         this.preguntas = servicio
     }
 
     public solicitarCuenta(){
-        this.preguntas.EnviarSolicitud(this.solicitud)
-        .subscribe(datos => {
-            datos.correo
-            console.log(datos);
+        this.preguntas.EnviarSolicitud(this.solicitud).subscribe();
         return this.mostrarAlertas();
-        })
     }
 
     mostrarAlertas(){
@@ -34,7 +31,6 @@ export class RecuperarComponent {
             title: 'Listo', 
             text: 'Solicitud enviada', 
             icon: 'success',
-            footer: '<a href=""> Volver al inicio </a>'
-            })
+        }).then(result => result.isConfirmed ? this.router.navigate(['']) : null);
     }
 }

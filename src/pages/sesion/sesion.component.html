@@ -8,8 +8,8 @@
                 <ion-card-content>
                     <ion-row>
                         <ion-col class="centrar">
-                            <label class="ion-align-self-start">Correo electrónico</label>
-                            <ion-input type="text" class="input" placeholder="Correo electrónico" [(ngModel)]="correo" ngDefaultControl></ion-input>
+                            <label class="ion-align-self-start">Usuario o Correo electrónico</label>
+                            <ion-input type="text" class="input" placeholder="Usuario o Correo electrónico" [(ngModel)]="correo" ngDefaultControl></ion-input>
                         </ion-col>
                     </ion-row>
                     <ion-row>
@@ -20,13 +20,13 @@
                     </ion-row>
                     <ion-row>
                         <ion-col>
-                            <ion-router-link href="recuperar" class="olvidoPassword">
+                            <ion-router-link routerLink="/recuperar" class="olvidoPassword">
                                 Olvidé mi contraseña
                             </ion-router-link>
                         </ion-col>
                     </ion-row>
                     <ion-row>
-                        <ion-router-link href="inicio" class="button">
+                        <ion-router-link class="button" (click)="iniciarSesion()">
                             <ion-col>
                                 <button class="button buttonLogin" >Iniciar Sesion</button>
                             </ion-col>
@@ -51,7 +51,7 @@
             <ion-col class="registrarse">
                 <p>¿No tienes una cuenta?</p>
 
-                <ion-router-link href="registrar" class="underline">
+                <ion-router-link routerLink="/registrar" class="underline">
                     Registrate aqui
                 </ion-router-link>
             </ion-col>

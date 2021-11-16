@@ -7,10 +7,17 @@
       "contrasena": "as",
       "repetir_contrasena": "as",
       "id": 1
+    },
+    {
+      "nombre_usuario": "sheshovs",
+      "nombre": "sergio",
+      "correo": "sheshovs@gmail.com",
+      "contrasena": "123123",
+      "repetir_contrasena": "123123",
+      "id": 2
     }
   ],
-  "sugerencias": [
-  ],
+  "sugerencias": [],
   "reportar": [
     {
       "pregunta": "hola vengo a reportar",

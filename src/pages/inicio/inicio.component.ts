@@ -1,30 +1,23 @@
-import { Component } from "@angular/core";
-import Swal from "sweetalert2";
+import { Component } from '@angular/core';
+import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
-    selector: 'inicio',
-    templateUrl: './inicio.component.html',
-    styleUrls: ['./inicio.component.css']
+  selector: 'inicio',
+  templateUrl: './inicio.component.html',
+  styleUrls: ['./inicio.component.css'],
 })
-
 export class InicioComponent {
+  constructor( private router: Router) {}
 
-    mostrarAlertas(){
-        Swal.fire({
-            title: '¿Estas seguro de cerrar la sesión?',
-            showDenyButton: true,
-            confirmButtonText: 'Cerrar',
-            denyButtonText: `No cerrar`,
-          }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
-            if (result.isConfirmed) {
-              Swal.fire({
-                  title: 'Sesión cerrada', 
-                  text: '', 
-                  icon: 'success',
-                  footer: '<a href=""> inicio </a>'})
-            } else if (result.isDenied) {
-            }
-          })
-        }
+  mostrarAlertas() {
+    Swal.fire({
+      title: '¿Estas seguro que quieres salir?',
+      showDenyButton: true,
+      confirmButtonText: 'Salir',
+      denyButtonText: `cancelar`,
+    }).then((result) => {
+      result.isConfirmed ? this.router.navigate(['']) : null;
+    });
+  }
 }
