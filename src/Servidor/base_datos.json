@@ -4,8 +4,8 @@
       "nombre_usuario": "matias4321",
       "nombre": "matias pino",
       "correo": "matias@gmail.com",
-      "contrasena": "matias1234",
-      "repetir_contrasena": "matias1234",
+      "contrasena": "matias123",
+      "repetir_contrasena": "matias123",
       "id": 1
     }
   ],
@@ -18,8 +18,8 @@
   ],
   "reportar": [
     {
-      "pregunta": "¿La pregunta 2x2?",
-      "motivo": "No muestra el resultado correcto.",
+      "pregunta": "¿Cuanto es 2x2?",
+      "motivo": "El resutlado es 4 y no aparece",
       "id": 1
     }
   ],
@@ -29,18 +29,79 @@
       "id": 1
     }
   ],
-  "preguntas_mate": [
+  "matematica": [
     {
+      "id": 1,
+      "pregunta": "200 estudiantes responden una prueba y el 10% de ellos responde de manera errónea la pregunta 15. Considerando que todos los estudiantes contestaron la pregunta 15, ¿cuántos estudiantes contestan correctamente esta pregunta?",
+      "respuesta": "180",
+      "opciones": [
+        { "texto": "10" },
+        { "texto": "20" },
+        { "texto": "160" },
+        { "texto": "180" }
+      ]
+    }
+  ],
+  "lenguaje": [
+    {
+      "id": 1,
       "pregunta": "¿Cuanto es 2 + 2?",
-      "categoria": "matematicas"
+      "respuesta": "4",
+      "opciones": [
+        { "texto": "2" },
+        { "texto": "3" },
+        { "texto": "4" },
+        { "texto": "5" }
+      ]
     },
     {
+      "id": 2,
       "pregunta": "¿Cuanto es 2 x 2?",
-      "categoria": "matematicas"
+      "respuesta": "4",
+      "opciones": [
+        { "texto": "2" },
+        { "texto": "3" },
+        { "texto": "4" },
+        { "texto": "5" }
+      ]
+    }
+  ],
+  "ciencias": [
+    {
+      "id": 1,
+      "pregunta": "¿Cuanto es 2 + 2?",
+      "respuesta": "4",
+      "opciones": [
+        { "texto": "2" },
+        { "texto": "3" },
+        { "texto": "4" },
+        { "texto": "5" }
+      ]
     },
     {
-      "pregunta": "¿Cual es la raiz cuadrada de 121?",
-      "categoria": "matematicas"
+      "id": 2,
+      "pregunta": "¿Cuanto es 2 x 2?",
+      "respuesta": "4",
+      "opciones": [
+        { "texto": "2" },
+        { "texto": "3" },
+        { "texto": "4" },
+        { "texto": "5" }
+      ]
+    }
+  ],
+  "historia": [
+    {
+      "id": 1,
+      "pregunta": "La participación ciudadana a nivel de base, como por ejemplo en las asambleas estudiantiles o vecinales, requiere informarse previamente. ¿Qué característica debe tener esta información para que sea un aporte a la participación ciudadana?",
+      "respuesta": "Debe relacionarse con las decisiones a debatir.",
+      "opciones": [
+        { "texto": "Debe ser de carácter confidencial." },
+        { "texto": "Debe originarse en la prensa escrita." },
+        { "texto": "Debe estar orientada a los dirigentes." },
+        { "texto": "Debe establecer jerarquías de opinión." },
+        { "texto": "Debe relacionarse con las decisiones a debatir." }
+      ]
     }
   ]
 }
