@@ -22,16 +22,31 @@ export class RecuperarComponent {
     }
 
     public solicitarCuenta(){
+      if(this.solicitud.correo === this.solicitud.correo) {  
         this.preguntas.EnviarSolicitud(this.solicitud).subscribe();
         return this.mostrarAlertas();
+        }
     }
 
     mostrarAlertas(){
+      if (this.solicitud.correo === this.solicitud.correo) {    
         Swal.fire({
             title: 'Listo', 
             text: 'Solicitud enviada', 
             icon: 'success',
             confirmButtonText: 'Aceptar'
         }).then(result => result.isConfirmed ? this.router.navigate(['']) : null);
+        }
+
+        /* Este if es en el caso en que la solicitud no encuentre el correo. (Falta arreglar para que no lo almacene)*/
+
+        /* if (this.solicitud.correo === '') {    
+            Swal.fire({
+                title: 'Error', 
+                text: 'Correo no encontrado', 
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            })
+        }  */ 
     }
 }

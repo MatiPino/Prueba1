@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CategoriasComponent } from 'src/pages/categorias/categorias.component';
 import { InicioComponent } from 'src/pages/inicio/inicio.component';
+import { PreguntasComponent } from 'src/pages/preguntas/preguntas.component';
 import { RankingsComponent } from 'src/pages/rankings/rankings.component';
 import { RecuperarComponent } from 'src/pages/recuperar/recuperar.component';
 import { RegistrarComponent } from 'src/pages/registrar/registrar.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
 {
   path: 'categorias',
   component: CategoriasComponent
+},
+{
+  path: 'preguntas',
+  component: PreguntasComponent
 },
 {
   path: 'sugerencias',

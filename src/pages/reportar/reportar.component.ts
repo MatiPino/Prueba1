@@ -32,6 +32,7 @@ export class ReportarComponent {
     }
 
     mostrarAlertas(){
+      if(this.reportar.pregunta === this.reportar.pregunta, this.reportar.motivo === this.reportar.motivo)  
         Swal.fire({
             title: 'Muy bien!', 
             text: 'Pregunta reportada con exito', 
@@ -40,5 +41,16 @@ export class ReportarComponent {
         }).then((result) =>
         result.isConfirmed ? this.router.navigate(['/sugerencias']) : null
         );
+
+        /*Este if es para indicar que un campo no esta rellenado (Falta arreglar para que no lo almacene) */
+        /* if(this.reportar.pregunta === '', this.reportar.motivo === '')
+        Swal.fire({
+            title: 'Lo sentimos', 
+            text: 'Debe llenar todos los campos', 
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        }) */ 
     }
+
+    
 }

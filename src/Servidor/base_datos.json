@@ -4,8 +4,8 @@
       "nombre_usuario": "matias4321",
       "nombre": "matias pino",
       "correo": "matias@gmail.com",
-      "contrasena": "matias123",
-      "repetir_contrasena": "matias123",
+      "contrasena": "matias1234",
+      "repetir_contrasena": "matias1234",
       "id": 1
     }
   ],
@@ -18,8 +18,8 @@
   ],
   "reportar": [
     {
-      "pregunta": "¿Cuanto es 2x2?",
-      "motivo": "El resutlado es 4 y no aparece",
+      "pregunta": "¿La pregunta 2x2?",
+      "motivo": "No muestra el resultado correcto.",
       "id": 1
     }
   ],
@@ -27,6 +27,20 @@
     {
       "correo": "matias@gmail.com",
       "id": 1
+    }
+  ],
+  "preguntas_mate": [
+    {
+      "pregunta": "¿Cuanto es 2 + 2?",
+      "categoria": "matematicas"
+    },
+    {
+      "pregunta": "¿Cuanto es 2 x 2?",
+      "categoria": "matematicas"
+    },
+    {
+      "pregunta": "¿Cual es la raiz cuadrada de 121?",
+      "categoria": "matematicas"
     }
   ]
 }

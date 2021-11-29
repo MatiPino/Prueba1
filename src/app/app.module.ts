@@ -23,6 +23,9 @@ import { SugerenciaService } from 'src/service/sugerencias/Sugerir.service';
 import { ReportarService } from 'src/service/reportar/Reportar.service';
 import { RecuperarService } from 'src/service/recuperar/Recuperar.service';
 import { AlertasComponent } from 'src/alertas/alertas.component';
+import { PreguntasComponent } from 'src/pages/preguntas/preguntas.component';
+import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
+import { PreguntasPipe } from './filtro/preguntas.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { AlertasComponent } from 'src/alertas/alertas.component';
     RankingsComponent,
     Sugerir_preguntaComponent,
     ReportarComponent,
-    AlertasComponent],
+    AlertasComponent,
+    PreguntasComponent,
+    PreguntasPipe],
   entryComponents: [],
   imports: [
     BrowserModule, 
@@ -49,7 +54,8 @@ import { AlertasComponent } from 'src/alertas/alertas.component';
     UserService,
     SugerenciaService,
     ReportarService,
-    RecuperarService],
+    RecuperarService,
+    PreguntaService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
