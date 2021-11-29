@@ -25,15 +25,15 @@ import { RecuperarService } from 'src/service/recuperar/Recuperar.service';
 import { AlertasComponent } from 'src/alertas/alertas.component';
 import { PreguntasComponent } from 'src/pages/preguntas/preguntas.component';
 import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
-import { PreguntasPipe } from './filtro/preguntas.pipe';
+// import { PreguntasPipe } from './filtro/preguntas.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    SesionComponent, 
-    InicioComponent, 
-    RecuperarComponent, 
-    RegistrarComponent, 
+    AppComponent,
+    SesionComponent,
+    InicioComponent,
+    RecuperarComponent,
+    RegistrarComponent,
     CategoriasComponent,
     SugerenciasComponent,
     RankingsComponent,
@@ -41,12 +41,13 @@ import { PreguntasPipe } from './filtro/preguntas.pipe';
     ReportarComponent,
     AlertasComponent,
     PreguntasComponent,
-    PreguntasPipe],
+    // PreguntasPipe
+  ],
   entryComponents: [],
   imports: [
-    BrowserModule, 
-    IonicModule.forRoot(), 
-    AppRoutingModule, 
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],

@@ -1,6 +1,6 @@
-import { Component, OnInit } from "@angular/core";
-import { Preguntas } from "src/interface/preguntas/Preguntas";
-import { PreguntaService } from "src/service/preguntas/Preguntar.service";
+import { Component, OnInit } from '@angular/core';
+import { Preguntas } from 'src/interface/preguntas/Preguntas';
+import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
 
 @Component({
     selector: 'preguntas',
@@ -10,16 +10,25 @@ import { PreguntaService } from "src/service/preguntas/Preguntar.service";
 
 export class PreguntasComponent implements OnInit {
     public pregunta: Preguntas;
+    public preguntas: any;
+    public preguntas$: any;
+    private preguntasService: PreguntaService;
 
-    constructor(private servicio: PreguntaService) {
+    constructor(servicio: PreguntaService) {
+        this.preguntasService = servicio;
     }
 
-
     ngOnInit() {
-        this.servicio.obtenerPreguntas(1).subscribe(
-            (datos: Preguntas) => {
-                this.pregunta = datos;
-            }
-        )
+        this.preguntas$ = this.preguntasService.listarPreguntasMatematica();
+        this.preguntas$.subscribe(datos => this.preguntas = datos);
+    }
+
+    public evaluarRespuesta(id: number, opcion: string){
+        const preguntaEvaluada = this.preguntas.map(pregunta => {if(pregunta.id === id){return pregunta;}else {return null;}});
+        if(preguntaEvaluada[0].respuesta === opcion){
+            console.log('Correcto');
+        } else {
+            console.log('Incorrecto');
+        }
     }
 }
