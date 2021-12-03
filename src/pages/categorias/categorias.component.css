@@ -20,7 +20,7 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 5px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .buttonMate {
@@ -47,4 +47,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.subtitulo {
+  font-size: 16px;
+  max-width: 100%;
+  text-align: justify;
+  display: flex;
+  padding: 0 20px;
 }

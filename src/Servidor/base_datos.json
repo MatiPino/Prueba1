@@ -55,44 +55,318 @@
           "texto": "8"
         }
       ]
+    },
+    {
+      "id": 3,
+      "pregunta": "¿A cuánto equivale π?",
+      "respuesta": "3,141592",
+      "opciones": [
+        {
+          "texto": "3,141592"
+        },
+        {
+          "texto": "3,149215"
+        },
+        {
+          "texto": "3,144423"
+        },
+        {
+          "texto": "3,144123"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pregunta": "Resuelve la siguiente ecuación 7/5 + 2/3 - 1 =",
+      "respuesta": "16/15",
+      "opciones": [
+        {
+          "texto": "17/15"
+        },
+        {
+          "texto": "8/8"
+        },
+        {
+          "texto": "1"
+        },
+        {
+          "texto": "16/15"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Qué formula es esta? S = π x R²",
+      "respuesta": "Superficie de un círculo",
+      "opciones": [
+        {
+          "texto": "Diámetro de un círculo"
+        },
+        {
+          "texto": "Superficie de un círculo"
+        },
+        {
+          "texto": "Volumen de un cilindro"
+        },
+        {
+          "texto": "Superficie de paralelogramos"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pregunta": "Por un bolso hemos pagado 50 euros, más el 21% de IVA. ¿Cuánto hemos tenido que pagar en total?",
+      "respuesta": "60,50",
+      "opciones": [
+        {
+          "texto": "60"
+        },
+        {
+          "texto": "60,50"
+        },
+        {
+          "texto": "61"
+        },
+        {
+          "texto": "65"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Qué expresa esta formula? e = mc²",
+      "respuesta": "Equivalencia entre masa y energía",
+      "opciones": [
+        {
+          "texto": "Circunferencia de un círculo"
+        },
+        {
+          "texto": "La teoria de probabilidad"
+        },
+        {
+          "texto": "Equivalencia entre masa y energía"
+        },
+        {
+          "texto": "Volumen de un cubo"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pregunta": "Una rueda de un coche da 4590 vueltas en 9 minutos. ¿Cuántas vueltas dará en 24 horas y 24 minutos?",
+      "respuesta": "746.640",
+      "opciones": [
+        {
+          "texto": "2.868"
+        },
+        {
+          "texto": "746.640"
+        },
+        {
+          "texto": "991.140"
+        },
+        {
+          "texto": "41.310"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pregunta": "Resuelve la siguiente ecuación (-3)³ + (-2)³ - (-3)³ + (-1)³",
+      "respuesta": "-9",
+      "opciones": [
+        {
+          "texto": "-10"
+        },
+        {
+          "texto": "+10"
+        },
+        {
+          "texto": "+9"
+        },
+        {
+          "texto": "-9"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pregunta": "Juan tiene 20 años menos que su padre y este tiene el triple de los años de su hijo. ¿Qué edad tienen cada uno?",
+      "respuesta": "10 Juan, 30 el padre",
+      "opciones": [
+        {
+          "texto": "10 Juan, 30 el padre"
+        },
+        {
+          "texto": "11 Juan, 31 el padre"
+        },
+        {
+          "texto": "12 Juan, 32 el padre"
+        },
+        {
+          "texto": "13 Juan, 33 el padre"
+        }
+      ]
     }
   ],
   "lenguaje": [
     {
       "id": 1,
-      "pregunta": "¿Cuanto es 2 + 2?",
-      "respuesta": "4",
+      "pregunta": "¿Que es un MODIFICADOR DIRECTO?",
+      "respuesta": "Un articulo o adjetivo que acompaña al sustantivo",
       "opciones": [
         {
-          "texto": "2"
+          "texto": "Una acción que realiza el sustantivo"
         },
         {
-          "texto": "3"
+          "texto": "Una preposición de acompaña al verbo"
         },
         {
-          "texto": "4"
-        },
-        {
-          "texto": "5"
+          "texto": "Un articulo o adjetivo que acompaña al sustantivo"
         }
       ]
     },
     {
       "id": 2,
-      "pregunta": "¿Cuanto es 2 x 2?",
-      "respuesta": "4",
+      "pregunta": "¿Que es un MODIFICADOR INDIRECTO?",
+      "respuesta": "Una palabra que modifica al sustantivo, es acompañada por una preposición o contracción",
       "opciones": [
         {
-          "texto": "2"
+          "texto": "Una modificacón del verbo"
         },
         {
-          "texto": "3"
+          "texto": "Una palabra que modifica al sustantivo, es acompañada por una preposición o contracción"
         },
         {
-          "texto": "4"
+          "texto": "Una palabra que define el tiempo en que realizó un acción"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Que es una CONSTRUCCIÓN COMPARATIVA?",
+      "respuesta": "Se utiliza las palabras como o cual, y modifica el sujeto",
+      "opciones": [
+        {
+          "texto": "Se utiliza las palabras como o cual, y modifica el sujeto"
         },
         {
-          "texto": "5"
+          "texto": "Compara el sujeto y el predicado"
+        },
+        {
+          "texto": "Una preposición que define a el predicado"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Que es la ORACIÓN BIMEMBRE?",
+      "respuesta": "Una oración que tiene sujeto y predicado",
+      "opciones": [
+        {
+          "texto": "Una oración que no tiene sujeto"
+        },
+        {
+          "texto": "Una oración que no tiene predicado"
+        },
+        {
+          "texto": "Una oración que tiene sujeto y predicado"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Que es SUJETO EXPRESO SIMPLE?",
+      "respuesta": "Que el sujeto tiene un núcleo",
+      "opciones": [
+        {
+          "texto": "Que hay dos sujetos"
+        },
+        {
+          "texto": "Que el sujeto tiene un núcleo"
+        },
+        {
+          "texto": "Que el predicado tiene mas de un núcleo"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pregunta": "¿Qué es SUJETO COMPUESTO?",
+      "respuesta": "Que el sujeto tiene mas de un núcleo",
+      "opciones": [
+        {
+          "texto": "Que el sujeto tiene dos adjetivos"
+        },
+        {
+          "texto": "Que el sujeto tiene mas de dos palabras"
+        },
+        {
+          "texto": "Que el sujeto tiene mas de un núcleo"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Qué es PREDICADO VERBAL SIMPLE?",
+      "respuesta": "El predicado tiene un solo núcleo",
+      "opciones": [
+        {
+          "texto": "El predicado tiene un solo núcleo"
+        },
+        {
+          "texto": "Que el predicado tiene mas de un núcleo"
+        },
+        {
+          "texto": "Todas son correctas"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Que es PRDICADO VERBAL COMPUESTO?",
+      "respuesta": "Que el predicado tiene mas de un núcleo",
+      "opciones": [
+        {
+          "texto": "El predicado tiene mas de un adjetivo"
+        },
+        {
+          "texto": "Que el predicado no tiene núcleo"
+        },
+        {
+          "texto": "Que el predicado tiene mas de un núcleo"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Qué indica un circunstancial de tiempo?",
+      "respuesta": "Se encuentra en el predicado y responde a ¿cuando?",
+      "opciones": [
+        {
+          "texto": "Se encuentra en el sujeto e indica cuando se hizo la acción"
+        },
+        {
+          "texto": "Se encentra en el predicado e indica clima"
+        },
+        {
+          "texto": "Se encuentra en el predicado y responde a ¿cuando?"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pregunta": "¿Que indica circunstancial de Lugar?",
+      "respuesta": "En el predicado indica lugar, responde a ¿Donde?",
+      "opciones": [
+        {
+          "texto": "En el predicado, indica adjetivos"
+        },
+        {
+          "texto": "En el predicado indica lugar, responde a ¿Donde?"
+        },
+        {
+          "texto": "En el predicado, define el verbo"
         }
       ]
     }
@@ -100,39 +374,161 @@
   "ciencias": [
     {
       "id": 1,
-      "pregunta": "¿Cuanto es 2 + 2?",
-      "respuesta": "4",
+      "pregunta": "En los mamíferos, la molécula de colesterol tiene las siguientes funciones I) Provee de energía a las células. II) Forma parte de las membranas biológicas. III) Es un precursor de las hormonas esteroidales. ",
+      "respuesta": "solo II y III",
       "opciones": [
         {
-          "texto": "2"
+          "texto": "solo I y III"
         },
         {
-          "texto": "3"
+          "texto": "solo II y III"
         },
         {
-          "texto": "4"
-        },
-        {
-          "texto": "5"
+          "texto": "I, II y III"
         }
       ]
     },
     {
       "id": 2,
-      "pregunta": "¿Cuanto es 2 x 2?",
-      "respuesta": "4",
+      "pregunta": "Una diferencia estructural entre las células procariontes y las eucariontes es que la célula ",
+      "respuesta": "Eucarionte presenta mayor grado de compartimentalización",
       "opciones": [
         {
-          "texto": "2"
+          "texto": "Procarionte tiene flagelos que le permiten desplazarse"
         },
         {
-          "texto": "3"
+          "texto": "Eucarionte presenta mayor grado de compartimentalización"
         },
         {
-          "texto": "4"
+          "texto": "Eucarionte presenta ADN asociado a proteínas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pregunta": "Un grupo de científicos sospecha que la entrada de una molécula X al interior de determinadas células ocurre mediante un transportador. La sospecha de estos científicos constituye ",
+      "respuesta": "Una hipótesis",
+      "opciones": [
+        {
+          "texto": "Una ley"
         },
         {
-          "texto": "5"
+          "texto": "Un problema resuelto"
+        },
+        {
+          "texto": "Una hipótesis"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Cuál de las opciones NO se ajusta a la siguiente definición? “Molécula formada por la unión de unidades repetidas”",
+      "respuesta": "Colesterol",
+      "opciones": [
+        {
+          "texto": "Almidón"
+        },
+        {
+          "texto": "Glicógeno"
+        },
+        {
+          "texto": "Colesterol"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pregunta": "Por razones experimentales, se desea remover la pared celular de las plantas para obtener células sin pared (protoplastos). ¿Cuál de los siguientes procedimientos permitiría obtener protoplastos?",
+      "respuesta": "Usar enzimas que hidrolicen los polisacáridos de la pared celular",
+      "opciones": [
+        {
+          "texto": "Aplicar altas temperaturas, para disolver la pared"
+        },
+        {
+          "texto": "Usar proteasas, para disolver las proteínas presentes en la pared celular"
+        },
+        {
+          "texto": "Usar enzimas que hidrolicen los polisacáridos de la pared celular"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pregunta": "Se investiga una sustancia de origen peptídico que, entre otras funciones, promueve la síntesis de proteínas, estimula la división celular y aumenta la síntesis de tejido óseo. A partir de estos datos, se deduce que esta sustancia es la hormona",
+      "respuesta": "GH",
+      "opciones": [
+        {
+          "texto": "GH"
+        },
+        {
+          "texto": "FSH"
+        },
+        {
+          "texto": "Somatostatina"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pregunta": "La expresión de los genes implicados en el desarrollo de los ojos en las mariposas permite que éstas detecten pequeños cambios en la posición del sol y patrones de luz polarizada. La oración: “estas propiedades les permiten orientar su ruta hacia fuentes de alimento”, corresponde a",
+      "respuesta": "Una hipótesis",
+      "opciones": [
+        {
+          "texto": "Una ley"
+        },
+        {
+          "texto": "Una hipótesis"
+        },
+        {
+          "texto": "Un experimento"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pregunta": "¿En cuál de los siguientes grupos es posible encontrar organismos quimiosintetizadores?",
+      "respuesta": "Bacterias",
+      "opciones": [
+        {
+          "texto": "Bacterias"
+        },
+        {
+          "texto": "Algas"
+        },
+        {
+          "texto": "Hongos"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pregunta": "Para calcular la productividad primaria neta en un ecosistema, a la productividad primaria bruta se le debe restar",
+      "respuesta": "La energía utilizada por los productores en el proceso de respiración",
+      "opciones": [
+        {
+          "texto": "La energía utilizada por los productores en el proceso de respiración"
+        },
+        {
+          "texto": "El calor disipado al ambiente en las transferencias de energía"
+        },
+        {
+          "texto": "La cantidad de materia orgánica fijada por los productores"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pregunta": "En Chile, ¿qué consecuencia puede tener la cacería ilegal de pumas sobre el ecosistema natural, considerando que este organismo es un consumidor terciario?",
+      "respuesta": "Aumento de la densidad poblacional de los consumidores secundarios",
+      "opciones": [
+        {
+          "texto": "Disminución de la densidad poblacional de los consumidores primarios"
+        },
+        {
+          "texto": "Disminución del número de descomponedores"
+        },
+        {
+          "texto": "Aumento de la densidad poblacional de los consumidores secundarios"
         }
       ]
     }
@@ -159,6 +555,178 @@
           "texto": "Debe relacionarse con las decisiones a debatir."
         }
       ]
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Qué hecho histórico se conmemora el 18 de septiembre?",
+      "respuesta": "La formación de la primera junta de gobierno",
+      "opciones": [
+        {
+          "texto": "La formación de la primera junta de gobierno"
+        },
+        {
+          "texto": "La independencia de chile "
+        },
+        {
+          "texto": "El motín de Figueroa"
+        },
+        {
+          "texto": "El golpe de estado"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Quién fue el primer Presidente de la República de Chile?",
+      "respuesta": "Manuel Blanco Encalada",
+      "opciones": [
+        {
+          "texto": "Bernando O’Higgins"
+        },
+        {
+          "texto": "Augusto Pinochet"
+        },
+        {
+          "texto": "Manuel Blanco Encalada"
+        },
+        {
+          "texto": "Ignacio de la carrera"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pregunta": "¿En qué lugar murió Bernardo O’Higgins?",
+      "respuesta": "Lima",
+      "opciones": [
+        {
+          "texto": "Isla de pascua"
+        },
+        {
+          "texto": "Lima"
+        },
+        {
+          "texto": "Chile"
+        },
+        {
+          "texto": "Canadá"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Quién escribió el himno chileno?",
+      "respuesta": "Eusebio Lillo",
+      "opciones": [
+        {
+          "texto": "Bernando O’Higgins"
+        },
+        {
+          "texto": "El mateo de toro y zambrano"
+        },
+        {
+          "texto": "challan"
+        },
+        {
+          "texto": "Eusebio Lillo"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pregunta": "¿Cuáles eran los colores de la primera bandera chilena?",
+      "respuesta": "Azul, blanca, amarilla",
+      "opciones": [
+        {
+          "texto": "Azul, blanca, amarilla"
+        },
+        {
+          "texto": "rojo, café, negro"
+        },
+        {
+          "texto": "amarillo, purpura, naranjo"
+        },
+        {
+          "texto": "blanco, verde, rosa"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pregunta": "A la llegada de los españoles diversos pueblos indígenas habitaban el actual territorio de Chile. Uno de estos pueblos fue el diaguita. ¿Cuál fue una de las actividades a que se dedicó este pueblo?",
+      "respuesta": "Elaboración de cerámica y alfarería",
+      "opciones": [
+        {
+          "texto": "Elaboración de cerámica y alfarería"
+        },
+        {
+          "texto": "Construcción de grandes ciudades"
+        },
+        {
+          "texto": "Fabricación de balsas de lobo marino"
+        },
+        {
+          "texto": "Recolección del piñón y caza del guanaco"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Cuál de los siguientes acontecimientos contribuyó a la ampliación de la democracia en Chile durante el siglo XX?",
+      "respuesta": "El reconocimiento del sufragio a las mujeres",
+      "opciones": [
+        {
+          "texto": "El cierre del Congreso Nacional"
+        },
+        {
+          "texto": "La separación de la Iglesia y del Estado"
+        },
+        {
+          "texto": "La privatización de las empresas estatales"
+        },
+        {
+          "texto": "El reconocimiento del sufragio a las mujeres"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Cuál fue una de las características del régimen parlamentario establecido en Chile?",
+      "respuesta": "La supremacía del Congreso Nacional",
+      "opciones": [
+        {
+          "texto": "El término de la rotativa ministerial"
+        },
+        {
+          "texto": "La supremacía del Congreso Nacional"
+        },
+        {
+          "texto": "El establecimiento del sufragio universal"
+        },
+        {
+          "texto": "El surgimiento de una nueva constitución"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pregunta": "El orden correcto de las etapas que componen el periodo de Independencia es:",
+      "respuesta": "Patria vieja – Reconquista – Patria nueva",
+      "opciones": [
+        {
+          "texto": "Patria nueva – reconquista - patria vieja"
+        },
+        {
+          "texto": "Reconquista – Patria Nueva – Ensayos constitucionales"
+        },
+        {
+          "texto": "Patria Nueva - reconquista – Patria moderna"
+        },
+        {
+          "texto": "Patria vieja – Reconquista – Patria nueva"
+        }
+      ]
     }
   ]
+
 }

@@ -42,12 +42,16 @@ export class PreguntasComponent implements OnInit {
         const el: HTMLElement = document.getElementById(`${id-1}r${indice}`);
         const preguntaEvaluada = this.preguntas.map(pregunta => {if(pregunta.id === id){return pregunta;}else {return null;}});
         if(preguntaEvaluada[id-1].respuesta === opcion){
-            el.classList.add('success');
-            this.puntos += 100;
+            if(!el.classList.contains('success')){
+                el.classList.add('success');
+                this.puntos += 100;
+            }
             console.log('Correcto');
         } else {
-            el.classList.add('error');
-            this.puntos -= 20;
+            if(!el.classList.contains('error')){
+                el.classList.add('error');
+                this.puntos -= 20;
+            }
             console.log('Incorrecto');
         }
     }
