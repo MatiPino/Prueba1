@@ -3,23 +3,25 @@
         <ion-title>
             <ion-icon class="icono-time" name="time-outline"></ion-icon>
         </ion-title>
-        <ion-grid class="container">
+
+        
+        <ion-grid class="container" *ngFor="let pregunta of preguntas; let i=index">
             <ion-row>
                 <ion-col class="centrar">
-                    <label class="ion-align-self-start">{{preguntas[0].pregunta}}</label>
+                    <label class="ion-align-self-start">{{i+1}}. {{pregunta.pregunta}}</label>
                 </ion-col>
             </ion-row>
-            <ion-grid *ngFor="let opcion of preguntas[0].opciones;let indice=index">
+            <ion-grid *ngFor="let opcion of pregunta.opciones;let indice=index">
                 <ion-row>
                     <ion-col>
-                        <button 
-                            class="button buttonRespuesta"
-                            (click)="evaluarRespuesta(preguntas[0].id, preguntas[0].opciones[indice].texto)">
-                        {{preguntas[0].opciones[indice].texto}}</button>
+                        <button class="button buttonRespuesta"
+                            (click)="evaluarRespuesta(pregunta.id, pregunta.opciones[indice].texto)">
+                            {{pregunta.opciones[indice].texto}}</button>
                     </ion-col>
                 </ion-row>
             </ion-grid>
         </ion-grid>
 
+        
     </ion-grid>
 </ion-content>

@@ -23,34 +23,32 @@ export class ReportarComponent {
     }
 
     public crearReporte(){
-        this.reportes.EnviarReporte(this.reportar)
-        .subscribe(datos => {
-            datos.pregunta, datos.motivo
-            console.log(datos);
+        
+        if(this.reportar.pregunta === '' ||
+        this.reportar.motivo === ''){
+        Swal.fire({
+          title: 'Error',
+          text: 'Ambos campos deben ser llenados.',
+          icon: 'error',
+          confirmButtonText: 'Cerrar',
+        });
+        return;
+      }
+      this.reportes.EnviarReporte(this.reportar).subscribe();
         return this.mostrarAlertas();
-        })
-    }
-
-    mostrarAlertas(){
-      if(this.reportar.pregunta === this.reportar.pregunta, this.reportar.motivo === this.reportar.motivo)  
-        Swal.fire({
-            title: 'Muy bien!', 
-            text: 'Pregunta reportada con exito', 
-            icon: 'success',
-            confirmButtonText: 'Sugerencias'
-        }).then((result) =>
-        result.isConfirmed ? this.router.navigate(['/sugerencias']) : null
-        );
-
-        /*Este if es para indicar que un campo no esta rellenado (Falta arreglar para que no lo almacene) */
-        /* if(this.reportar.pregunta === '', this.reportar.motivo === '')
-        Swal.fire({
-            title: 'Lo sentimos', 
-            text: 'Debe llenar todos los campos', 
-            icon: 'error',
-            confirmButtonText: 'Aceptar'
-        }) */ 
     }
 
     
+    mostrarAlertas(){
+        if(this.reportar.pregunta === this.reportar.pregunta, this.reportar.motivo === this.reportar.motivo)  
+      Swal.fire({
+          title: 'Muy bien!', 
+          text: 'Pregunta reportada con exito', 
+          icon: 'success',
+          confirmButtonText: 'Sugerencias'
+      }).then((result) =>
+      result.isConfirmed ? this.router.navigate(['/sugerencias']) : null
+      );
+    
+    }
 }

@@ -25,7 +25,6 @@ import { RecuperarService } from 'src/service/recuperar/Recuperar.service';
 import { AlertasComponent } from 'src/alertas/alertas.component';
 import { PreguntasComponent } from 'src/pages/preguntas/preguntas.component';
 import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
-// import { PreguntasPipe } from './filtro/preguntas.pipe';
 
 @NgModule({
   declarations: [
@@ -40,8 +39,7 @@ import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
     Sugerir_preguntaComponent,
     ReportarComponent,
     AlertasComponent,
-    PreguntasComponent,
-    // PreguntasPipe
+    PreguntasComponent
   ],
   entryComponents: [],
   imports: [

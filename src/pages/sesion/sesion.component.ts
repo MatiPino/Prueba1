@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/interface/usuarios/User';
 import { UserService } from 'src/service/usuarios/User.service';
 import Swal from 'sweetalert2';
@@ -14,7 +15,7 @@ export class SesionComponent implements OnInit {
 
   private iniciar: UserService;
 
-  constructor(servicio: UserService) {
+  constructor(servicio: UserService, private router: Router) {
     this.iniciar = servicio;
   }
 
@@ -23,6 +24,17 @@ export class SesionComponent implements OnInit {
   }
 
   public iniciarSesion() {
+
+    if (this.correo === this.correo, this.contrasena === this.contrasena) {
+      Swal.fire({
+        title: 'Genial',
+        text: 'Inicio de Sesion Exitoso.',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+      }).then((result) =>
+      result.isConfirmed ? this.router.navigate(['/inicio']) : null
+    );
+    }
 
     if (this.correo === '') {
       Swal.fire({

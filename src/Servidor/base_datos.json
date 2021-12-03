@@ -9,23 +9,11 @@
       "id": 1
     }
   ],
-  "sugerencias": [
-    {
-      "pregunta": "¿Cuanto es 2 + 2?",
-      "respuesta": "El resultado es 4",
-      "id": 1
-    }
-  ],
-  "reportar": [
-    {
-      "pregunta": "¿Cuanto es 2x2?",
-      "motivo": "El resutlado es 4 y no aparece",
-      "id": 1
-    }
-  ],
+  "sugerencias": [],
+  "reportar": [],
   "recuperar": [
     {
-      "correo": "matias@gmail.com",
+      "correo": "matias123@gmail.com",
       "id": 1
     }
   ],
@@ -35,10 +23,37 @@
       "pregunta": "200 estudiantes responden una prueba y el 10% de ellos responde de manera errónea la pregunta 15. Considerando que todos los estudiantes contestaron la pregunta 15, ¿cuántos estudiantes contestan correctamente esta pregunta?",
       "respuesta": "180",
       "opciones": [
-        { "texto": "10" },
-        { "texto": "20" },
-        { "texto": "160" },
-        { "texto": "180" }
+        {
+          "texto": "10"
+        },
+        {
+          "texto": "20"
+        },
+        {
+          "texto": "160"
+        },
+        {
+          "texto": "180"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "pregunta": "Cuántos años tiene una persona sabiendo que la tercera parte de sus años menos 1 es igual a la sexta parte",
+      "respuesta": "6",
+      "opciones": [
+        {
+          "texto": "7"
+        },
+        {
+          "texto": "5"
+        },
+        {
+          "texto": "6"
+        },
+        {
+          "texto": "8"
+        }
       ]
     }
   ],
@@ -48,10 +63,18 @@
       "pregunta": "¿Cuanto es 2 + 2?",
       "respuesta": "4",
       "opciones": [
-        { "texto": "2" },
-        { "texto": "3" },
-        { "texto": "4" },
-        { "texto": "5" }
+        {
+          "texto": "2"
+        },
+        {
+          "texto": "3"
+        },
+        {
+          "texto": "4"
+        },
+        {
+          "texto": "5"
+        }
       ]
     },
     {
@@ -59,10 +82,18 @@
       "pregunta": "¿Cuanto es 2 x 2?",
       "respuesta": "4",
       "opciones": [
-        { "texto": "2" },
-        { "texto": "3" },
-        { "texto": "4" },
-        { "texto": "5" }
+        {
+          "texto": "2"
+        },
+        {
+          "texto": "3"
+        },
+        {
+          "texto": "4"
+        },
+        {
+          "texto": "5"
+        }
       ]
     }
   ],
@@ -72,10 +103,18 @@
       "pregunta": "¿Cuanto es 2 + 2?",
       "respuesta": "4",
       "opciones": [
-        { "texto": "2" },
-        { "texto": "3" },
-        { "texto": "4" },
-        { "texto": "5" }
+        {
+          "texto": "2"
+        },
+        {
+          "texto": "3"
+        },
+        {
+          "texto": "4"
+        },
+        {
+          "texto": "5"
+        }
       ]
     },
     {
@@ -83,10 +122,18 @@
       "pregunta": "¿Cuanto es 2 x 2?",
       "respuesta": "4",
       "opciones": [
-        { "texto": "2" },
-        { "texto": "3" },
-        { "texto": "4" },
-        { "texto": "5" }
+        {
+          "texto": "2"
+        },
+        {
+          "texto": "3"
+        },
+        {
+          "texto": "4"
+        },
+        {
+          "texto": "5"
+        }
       ]
     }
   ],
@@ -96,11 +143,21 @@
       "pregunta": "La participación ciudadana a nivel de base, como por ejemplo en las asambleas estudiantiles o vecinales, requiere informarse previamente. ¿Qué característica debe tener esta información para que sea un aporte a la participación ciudadana?",
       "respuesta": "Debe relacionarse con las decisiones a debatir.",
       "opciones": [
-        { "texto": "Debe ser de carácter confidencial." },
-        { "texto": "Debe originarse en la prensa escrita." },
-        { "texto": "Debe estar orientada a los dirigentes." },
-        { "texto": "Debe establecer jerarquías de opinión." },
-        { "texto": "Debe relacionarse con las decisiones a debatir." }
+        {
+          "texto": "Debe ser de carácter confidencial."
+        },
+        {
+          "texto": "Debe originarse en la prensa escrita."
+        },
+        {
+          "texto": "Debe estar orientada a los dirigentes."
+        },
+        {
+          "texto": "Debe establecer jerarquías de opinión."
+        },
+        {
+          "texto": "Debe relacionarse con las decisiones a debatir."
+        }
       ]
     }
   ]

@@ -22,10 +22,22 @@ export class RecuperarComponent {
     }
 
     public solicitarCuenta(){
-      if(this.solicitud.correo === this.solicitud.correo) {  
-        this.preguntas.EnviarSolicitud(this.solicitud).subscribe();
-        return this.mostrarAlertas();
-        }
+        const re =
+        /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+
+        if(!re.test(String(this.solicitud.correo).toLocaleLowerCase())){
+            Swal.fire({
+              title: 'Error',
+              text: 'El correo debe estar registrado.',
+              icon: 'error',
+              confirmButtonText: 'Cerrar',
+            });
+            return;
+          }
+
+    this.preguntas.EnviarSolicitud(this.solicitud).subscribe();
+    return this.mostrarAlertas();    
     }
 
     mostrarAlertas(){
@@ -37,16 +49,5 @@ export class RecuperarComponent {
             confirmButtonText: 'Aceptar'
         }).then(result => result.isConfirmed ? this.router.navigate(['']) : null);
         }
-
-        /* Este if es en el caso en que la solicitud no encuentre el correo. (Falta arreglar para que no lo almacene)*/
-
-        /* if (this.solicitud.correo === '') {    
-            Swal.fire({
-                title: 'Error', 
-                text: 'Correo no encontrado', 
-                icon: 'error',
-                confirmButtonText: 'Aceptar'
-            })
-        }  */ 
     }
 }

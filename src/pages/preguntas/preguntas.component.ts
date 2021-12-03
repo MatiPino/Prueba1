@@ -24,8 +24,8 @@ export class PreguntasComponent implements OnInit {
     }
 
     public evaluarRespuesta(id: number, opcion: string){
-        const preguntaEvaluada = this.preguntas.map(pregunta => {if(pregunta.id === id){return pregunta;}else {return null;}});
-        if(preguntaEvaluada[0].respuesta === opcion){
+        const preguntaEvaluada1 = this.preguntas.map(pregunta => {if(pregunta.id === id){return pregunta;}else {return null;}});
+        if(preguntaEvaluada1[id-1].respuesta === opcion){
             console.log('Correcto');
         } else {
             console.log('Incorrecto');

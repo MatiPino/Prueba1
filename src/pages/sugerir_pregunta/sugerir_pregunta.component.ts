@@ -23,13 +23,20 @@ export class Sugerir_preguntaComponent{
     }
 
     public crearPregunta(){
-        this.preguntas.EnviarSugerencia(this.sugerencia)
-        .subscribe(datos => {
-            datos.pregunta, datos.respuesta
-            console.log(datos);
-        return this.mostrarAlertas();
-        })
-    }
+
+        if(this.sugerencia.pregunta === '' ||
+        this.sugerencia.respuesta === ''){
+        Swal.fire({
+          title: 'Error',
+          text: 'Ambos campos deben ser llenados.',
+          icon: 'error',
+          confirmButtonText: 'Cerrar',
+        });
+        return;
+      }
+    this.preguntas.EnviarSugerencia(this.sugerencia).subscribe();
+    return this.mostrarAlertas();
+}
 
     mostrarAlertas(){
         Swal.fire({
