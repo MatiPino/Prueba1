@@ -8,21 +8,25 @@
                 <ion-row>
                     <ion-col>
                         <ion-router-link routerLink="/preguntas">
-                            <button class="button buttonMate">Matematicas</button>
+                            <button class="button buttonMate" (click)="settearCategoria('Matemáticas')">Matemáticas</button>
                         </ion-router-link>
                     </ion-col>
                     
                     <ion-col>
-                        <button class="button buttonLeng">Lenguaje</button>
+                        <ion-router-link routerLink="/preguntas">
+                            <button class="button buttonLeng" (click)="settearCategoria('Lenguaje')">Lenguaje</button>
+                        </ion-router-link>
                     </ion-col>
                 </ion-row>
                 <ion-row>
                     <ion-col>
-                        <button class="button buttonCien">Ciencias</button>
+                        <ion-router-link routerLink="/preguntas">
+                            <button class="button buttonCien" (click)="settearCategoria('Ciencias')">Ciencias</button>
+                        </ion-router-link>
                     </ion-col>
                     <ion-col>
                         <ion-router-link routerLink="/preguntas">
-                            <button class="button buttonHist">Historia</button>
+                            <button class="button buttonHist" (click)="settearCategoria('Historia')">Historia</button>
                         </ion-router-link>
                     </ion-col>
                 </ion-row>

@@ -25,6 +25,7 @@ import { RecuperarService } from 'src/service/recuperar/Recuperar.service';
 import { AlertasComponent } from 'src/alertas/alertas.component';
 import { PreguntasComponent } from 'src/pages/preguntas/preguntas.component';
 import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
+import { PuntuacionComponent } from 'src/pages/puntuacion/puntuacion.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
     Sugerir_preguntaComponent,
     ReportarComponent,
     AlertasComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    PuntuacionComponent
   ],
   entryComponents: [],
   imports: [

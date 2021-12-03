@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
+import { PreguntaService } from 'src/service/preguntas/Preguntar.service';
 
 @Component({
     selector: 'categorias',
@@ -7,5 +8,15 @@ import { Component } from "@angular/core";
 })
 
 export class CategoriasComponent {
+
+    private preguntasService: PreguntaService;
+
+    constructor(servicio: PreguntaService) {
+        this.preguntasService = servicio;
+    }
+
+    public settearCategoria(text: string) {
+        this.preguntasService.setCategoria(text);
+    }
 
 }

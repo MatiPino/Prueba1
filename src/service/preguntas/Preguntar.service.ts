@@ -7,6 +7,8 @@ import { Preguntas } from 'src/interface/preguntas/Preguntas';
 
 @Injectable()
 export class PreguntaService {
+    public puntos: number;
+    public text: string;
     private url: string = 'http://localhost:3000/';
 
     constructor(private servidor: HttpClient) {
@@ -15,6 +17,22 @@ export class PreguntaService {
 
     obtenerPreguntas(id){
         return this.servidor.get(`${this.url}/${id}`);
+    }
+
+    public setPuntos(puntos: number) {
+        this.puntos = puntos;
+    }
+
+    public obtenerPuntos(): number {
+        return this.puntos;
+    }
+
+    public setCategoria(text: string) {
+        this.text = text;
+    }
+
+    public obtenerCategoria(): string {
+        return this.text;
     }
 
 

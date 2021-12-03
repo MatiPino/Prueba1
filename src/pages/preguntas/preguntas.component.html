@@ -1,9 +1,8 @@
 <ion-content [fullscreen]="true">
     <ion-grid class="completa">
-        <ion-title>
-            <ion-icon class="icono-time" name="time-outline"></ion-icon>
+        <ion-title class="titulo-inicio">
+            {{categoria}}
         </ion-title>
-
         
         <ion-grid class="container" *ngFor="let pregunta of preguntas; let i=index">
             <ion-row>
@@ -14,13 +13,28 @@
             <ion-grid *ngFor="let opcion of pregunta.opciones;let indice=index">
                 <ion-row>
                     <ion-col>
-                        <button class="button buttonRespuesta"
-                            (click)="evaluarRespuesta(pregunta.id, pregunta.opciones[indice].texto)">
+                        <button 
+                            class="button buttonRespuesta"
+                            [id]="i+'r'+indice"
+                            (click)="evaluarRespuesta(pregunta.id, pregunta.opciones[indice].texto, indice)">
                             {{pregunta.opciones[indice].texto}}</button>
                     </ion-col>
                 </ion-row>
             </ion-grid>
         </ion-grid>
+
+        <ion-row>
+            <ion-col>
+                <ion-router-link routerLink="/categorias">
+                    <button class="button">Volver</button>
+                </ion-router-link>
+            </ion-col>
+            <ion-col>
+                <ion-router-link routerLink="/puntuacion">
+                    <button class="button buttonFinalizar" (click)="setPuntos()" >Finalizar</button>
+                </ion-router-link>
+            </ion-col>
+        </ion-row>
 
         
     </ion-grid>

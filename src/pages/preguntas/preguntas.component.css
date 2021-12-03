@@ -27,7 +27,7 @@
 
 .button {
   width: 100%;
-  padding: 10px;
+  padding: 20px 5px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
@@ -36,13 +36,40 @@
   text-transform: uppercase;
   margin-top: 5px;
 }
+
 .buttonRespuesta {
   background-color: #ffffff;
   color: #555555;
   border: 2px solid #555555;
 }
 
+.success {
+  background-color: #1eff0086;
+  color: #ffffff;
+  border: 2px solid #1eff003d;
+}
+
+.error {
+  background-color: #ff0000a8;
+  color: #ffffff;
+  border: 2px solid #ff000052;
+}
+
 .container {
   width: 80%;
   padding: 10px;
+}
+
+.titulo-inicio {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.buttonFinalizar {
+  background-color: #0cc623;
+  color: #ffffff;
 }

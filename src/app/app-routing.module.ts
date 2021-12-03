@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CategoriasComponent } from 'src/pages/categorias/categorias.component';
 import { InicioComponent } from 'src/pages/inicio/inicio.component';
 import { PreguntasComponent } from 'src/pages/preguntas/preguntas.component';
+import { PuntuacionComponent } from 'src/pages/puntuacion/puntuacion.component';
 import { RankingsComponent } from 'src/pages/rankings/rankings.component';
 import { RecuperarComponent } from 'src/pages/recuperar/recuperar.component';
 import { RegistrarComponent } from 'src/pages/registrar/registrar.component';
@@ -35,6 +36,10 @@ const routes: Routes = [
 {
   path: 'preguntas',
   component: PreguntasComponent
+},
+{
+  path: 'puntuacion',
+  component: PuntuacionComponent
 },
 {
   path: 'sugerencias',

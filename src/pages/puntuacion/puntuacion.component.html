@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+    <ion-grid class="completa">
+        <ion-title class="titulo-inicio">
+            Puntuación
+        </ion-title>
+
+        <ion-row>
+            <ion-col class="puntaje">
+                <label>{{puntaje.toString()}}</label>
+            </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+            <ion-col>
+                <ion-router-link routerLink="/inicio">
+                    <button class="button">Volver al inicio</button>
+                </ion-router-link>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
